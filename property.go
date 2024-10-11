@@ -128,9 +128,10 @@ type Option struct {
 }
 
 type DateProperty struct {
-	ID   ObjectID     `json:"id,omitempty"`
-	Type PropertyType `json:"type,omitempty"`
-	Date *DateObject  `json:"date"`
+	ID         ObjectID     `json:"id,omitempty"`
+	Type       PropertyType `json:"type,omitempty"`
+	Date       *DateObject  `json:"date"`
+	TimeFormat string       `json:"time_format,omitempty"`
 }
 
 type DateObject struct {
